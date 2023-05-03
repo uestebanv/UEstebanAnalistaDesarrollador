@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Horario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Horario de Clase</h2>
+<h4s>Bienvenido a tu Horario</h4s>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" style="float:right">
+            @*<a><input id="idAgregar" type="submit" value="Nuevo" class="btn btn-success" onclick="" /></a>*@
+            <button class="btn btn-success" onclick="Despligue()">Saludo</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="row" id="input" style="display:none;">
+
+        <div class="input-group">
+            <div class="row">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <table id="tblEmpleado" class="table table-hover" border="1">
+                <thead>
+                    <tr>
+                        <td class="text-center" style="font-weight:bold;">Editar</td>
+                        <td class="text-center" style="font-weight:bold;">Titulo de la Materia </td>
+                        <td class="text-center" style="font-weight:bold;">Hora y dia </td>
+                        <td class="text-center" style="font-weight:bold;">Eliminar</td>
+                    </tr>
+
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function Despligue() {
+        alert('Bienvenido al sistema');
+    }
+</script>
+
+
+@*@section Scripts
+    {
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <script type="text/javascript">
+        $('#idAgregar').click(function () {
+            $('#input').toggle('slow', function () {
+            });
+        });
+    </script>
+}*@
